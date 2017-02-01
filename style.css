@@ -16,7 +16,7 @@ Theme: KCC Know Your Score
 Copyright 2017, © Zest the Agency
 Author: Zest the Agency
 */
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=3fcffd9c-105d-4872-8985-071b1748fc21");
+@import url("https://fast.fonts.net/t/1.css?apiType=css&projectid=3fcffd9c-105d-4872-8985-071b1748fc21");
 html,
 body,
 div,
@@ -249,6 +249,7 @@ body {
   font-weight: 400;
   color: #003640;
   line-height: 1.4;
+  background-color: #FFFFFF;
 }
 h1,
 h2,
@@ -386,6 +387,7 @@ Author: Zest the Agency
 .app-container {
   width: 780px;
   height: 974px;
+  margin: 0 auto;
   background-color: #FFFFFF;
 }
 .app-container .app-content {
