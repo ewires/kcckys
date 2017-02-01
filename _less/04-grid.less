@@ -1,0 +1,73 @@
+
+/* 
+Use: Grid
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+
+
+/*************************************************************************
+ #Spacing
+**************************************************************************/
+
+/* #Margins ------------------------------------------------------------------------ */
+
+	@fluid-margin: 				3%; 			/* Horizontal margin equal to 30px @ 1000px */
+	@column-width: 				5.083%; 		/* Column width - equal to 50.83px @ 1000px */
+
+
+/*************************************************************************
+ #Multi-column layout
+**************************************************************************/
+
+/* #Grid Columns ------------------------------------------------------------------------ */
+
+	.one-column() {
+		width: @column-width;
+	}
+
+	.two-column() {
+		width: (@column-width * 2) + (@fluid-margin * 1);
+	}
+
+	.three-column() {
+		width: (@column-width * 3) + (@fluid-margin * 2);
+	}
+
+	.four-column() {
+		width: (@column-width * 4) + (@fluid-margin * 3);
+	}
+
+	.five-column() {
+		width: (@column-width * 5) + (@fluid-margin * 4);
+	}
+
+	.six-column() {
+		width: (@column-width * 6) + (@fluid-margin * 5);
+	}
+
+	.seven-column() {
+		width: (@column-width * 7) + (@fluid-margin * 6);
+	}
+
+	.eight-column() {
+		width: (@column-width * 8) + (@fluid-margin * 7);
+	}
+
+	.nine-column() {
+		width: (@column-width * 9) + (@fluid-margin * 8);
+	}
+
+	.ten-column() {
+		width: (@column-width * 10) + (@fluid-margin * 9);
+	}
+	
+	.eleven-column() {
+		width: (@column-width * 11) + (@fluid-margin * 10);
+	}
+	
+	.twelve-column() {
+		width: (@column-width * 12) + (@fluid-margin * 11);
+	}

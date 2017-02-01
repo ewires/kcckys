@@ -1,0 +1,845 @@
+/*
+Theme Name: KCC Know Your Score
+Author: Zest the Agency
+Author URI: http://zesttheagency.com/
+Description: Custom theme for KCC Know Your Score Facebook App
+Version: 1.0
+License: All work ©2017 Zest the Agency. Not for public use.
+License URI: http://zesttheagency.com/
+Tags: 
+Text Domain: kccknowyourscore
+*/
+/* 
+Use: Reset
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=3fcffd9c-105d-4872-8985-071b1748fc21");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: top;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 
+Use: Mixins
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box !important;
+}
+/* 
+Use: Measurements
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+/*************************************************************************
+ #Base Sizes
+**************************************************************************/
+/* 
+Use: Grid
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+/*************************************************************************
+ #Spacing
+**************************************************************************/
+/* #Margins ------------------------------------------------------------------------ */
+/* Horizontal margin equal to 30px @ 1000px */
+/* Column width - equal to 50.83px @ 1000px */
+/*************************************************************************
+ #Multi-column layout
+**************************************************************************/
+/* #Grid Columns ------------------------------------------------------------------------ */
+/* 
+Use: Colours
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+/*************************************************************************
+ #Colours
+**************************************************************************/
+/* #Core Colours ------------------------------------------------------------------------ */
+/* #Turquoise ------------------------------------------------------------------------ */
+/* #Mauves ------------------------------------------------------------------------ */
+/* #Greys ------------------------------------------------------------------------ */
+/* 
+Use: Typography
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+/*************************************************************************
+ #Import Fonts
+**************************************************************************/
+@font-face {
+  font-family: "Helvetica Neue LT W01_55 Roman";
+  src: url("fonts/helvetica-neue/bf7ef4ce-de2a-4213-a9d7-826a3ee323cd.eot?#iefix");
+  src: url("fonts/helvetica-neue/bf7ef4ce-de2a-4213-a9d7-826a3ee323cd.eot?#iefix") format("eot"), url("fonts/helvetica-neue/3dac71eb-afa7-4c80-97f0-599202772905.woff2") format("woff2"), url("fonts/helvetica-neue/34e0e4c0-c294-49bb-9a8e-1b2cafd54e32.woff") format("woff"), url("fonts/helvetica-neue/8a8bfee3-197c-4942-9b11-71508cc9f406.ttf") format("truetype"), url("fonts/helvetica-neue/5101995a-e73b-4cf9-84e8-f99eb43277b1.svg#5101995a-e73b-4cf9-84e8-f99eb43277b1") format("svg");
+}
+/*************************************************************************
+ #Font Styles
+**************************************************************************/
+.source-sans-pro-regular {
+  font-family: 'source-sans-pro', Verdana, Geneva, sans-serif;
+  font-weight: 400;
+}
+.source-sans-pro-semibold {
+  font-family: 'source-sans-pro', Verdana, Geneva, sans-serif;
+  font-weight: 600;
+}
+.source-sans-pro-bold {
+  font-family: 'source-sans-pro', Verdana, Geneva, sans-serif;
+  font-weight: 700;
+}
+/*************************************************************************
+ #Line Heights
+**************************************************************************/
+/*************************************************************************
+ #Basic HTML
+**************************************************************************/
+::-moz-selection {
+  background-color: #003640;
+  text-shadow: none;
+  color: #FFFFFF;
+}
+::selection {
+  background-color: #003640;
+  text-shadow: none;
+  color: #FFFFFF;
+}
+::-moz-selection {
+  background-color: #003640;
+  text-shadow: none;
+  color: #FFFFFF;
+}
+body {
+  font-size: 18px;
+  font-family: 'source-sans-pro', Verdana, Geneva, sans-serif;
+  font-weight: 400;
+  color: #003640;
+  line-height: 1.4;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'source-sans-pro', Verdana, Geneva, sans-serif;
+  font-weight: 600;
+  color: #003640;
+  margin-bottom: 27px;
+}
+h1 {
+  font-size: 45px;
+  line-height: 1;
+}
+h2,
+h3,
+h4 {
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 27px;
+}
+h4 {
+  font-size: 22.5px;
+}
+h5 {
+  margin-bottom: 0;
+}
+p,
+ul,
+ol {
+  margin-bottom: 6.3px;
+}
+p:last-child,
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-left: 36px;
+  list-style-position: outside;
+}
+ul li,
+ol li {
+  margin-bottom: 9px;
+}
+ul li:last-child,
+ol li:last-child {
+  margin-bottom: 0;
+}
+ul li ul,
+ol li ul,
+ul li ol,
+ol li ol {
+  margin-top: 9px;
+}
+.no-style-list {
+  margin-left: 0;
+}
+.no-style-list li {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+.no-style-list li ul,
+.no-style-list li ol {
+  margin-top: 0;
+}
+ul li {
+  list-style-type: square;
+}
+ol li {
+  list-style-type: decimal;
+}
+a {
+  -webkit-transition: all 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: all 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  position: relative;
+  text-decoration: none;
+  word-wrap: break-word;
+  color: #003640;
+}
+.standfirst {
+  font-size: 36px;
+}
+strong {
+  font-family: 'source-sans-pro', Verdana, Geneva, sans-serif;
+  font-weight: 700;
+}
+em {
+  font-style: italic;
+}
+.small {
+  font-size: 13.5px;
+}
+.caps,
+.uppercase {
+  text-transform: uppercase;
+}
+.screen-reader,
+.screenReader {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+/*************************************************************************
+ #Font Awesome
+**************************************************************************/
+.font-awesome {
+  font-family: 'FontAwesome';
+  font-size: inherit;
+  text-rendering: auto;
+  font-smoothing: antialiased;
+  font-smoothing: grayscale;
+}
+/* 
+Use: Content Layout
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+/*************************************************************************
+ #App Container
+**************************************************************************/
+.app-container {
+  width: 780px;
+  height: 974px;
+  background-color: #FFFFFF;
+}
+.app-container .app-content {
+  width: 100%;
+  height: 844px;
+  padding: 80px 40px;
+  background-image: url(img/app-content-background.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.app-container .app-content.landing-page .know-your-score-logo {
+  margin-bottom: 80px;
+}
+.app-container .app-content.landing-page h1 {
+  margin-bottom: 80px;
+}
+.app-container .app-content.question-page .know-your-score-logo,
+.app-container .app-content.answer-page .know-your-score-logo {
+  width: 174px;
+  margin-bottom: 40px;
+}
+.app-container .app-content.question-page h1,
+.app-container .app-content.answer-page h1 {
+  margin-bottom: 30px;
+}
+.app-container .app-content.answer-page h1 {
+  color: #690046;
+}
+.app-container .app-content.answer-page p {
+  margin-bottom: 20px!important;
+}
+.app-container .app-content.answer-page .video-embed {
+  width: 560px;
+  margin: 0 auto;
+}
+/*************************************************************************
+ #Vertical Centering
+**************************************************************************/
+.vertical-outer {
+  display: table;
+  height: 100%;
+}
+.vertical-outer .vertical-top,
+.vertical-outer .vertical-middle,
+.vertical-outer .vertical-bottom {
+  display: table-cell;
+}
+.vertical-outer .vertical-top {
+  vertical-align: top;
+}
+.vertical-outer .vertical-middle {
+  vertical-align: middle;
+}
+.vertical-outer .vertical-bottom {
+  vertical-align: bottom;
+}
+/* 
+Use: Image Treatments
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+/*************************************************************************
+ #Global Images
+**************************************************************************/
+/* #Scale IMG Proportionally to Container ------------------------------------------------------------------------ */
+/*************************************************************************
+ #Responsive Image Container
+**************************************************************************/
+.responsive-image {
+  position: relative;
+  overflow: hidden;
+}
+.responsive-image .image-container {
+  -webkit-transition: all 350ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: all 350ms cubic-bezier(0.5, 0, 0.5, 1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.responsive-image.image-hover:hover .image-container {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+      -ms-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+/* #Aspect Ratios for Responsive Images ------------------------------------------------------------------------ */
+/* #4:3 Ratio ------------------------------------------------------------------------ */
+.four-by-three {
+  padding-bottom: 75%;
+}
+/* #16:9 Ratio ------------------------------------------------------------------------ */
+.sixteen-by-nine {
+  padding-bottom: 56.25%;
+}
+/* #16:10 Ratio ------------------------------------------------------------------------ */
+.sixteen-by-ten {
+  padding-bottom: 62%;
+}
+/* #3:1 Ratio ------------------------------------------------------------------------ */
+.three-by-one {
+  padding-bottom: 33%;
+}
+/* #2:1 Ratio ------------------------------------------------------------------------ */
+.two-by-one {
+  padding-bottom: 50%;
+}
+/* #3:2 Ratio ------------------------------------------------------------------------ */
+.three-by-two {
+  padding-bottom: 66%;
+}
+/* #1:1 Ratio ------------------------------------------------------------------------ */
+.one-by-one {
+  padding-bottom: 100%;
+}
+/* #1:14 Ratio ------------------------------------------------------------------------ */
+.one-by-one-four {
+  padding-bottom: 141%;
+}
+/* #1:2 Ratio ------------------------------------------------------------------------ */
+.one-by-two {
+  padding-bottom: 200%;
+}
+/*************************************************************************
+ #Responsive Video Container
+**************************************************************************/
+.video-container {
+  padding-bottom: 56.25%;
+  position: relative;
+  margin-bottom: 20px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* 
+Use: UI
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+/*************************************************************************
+ #UI controls
+**************************************************************************/
+/* #Buttons ------------------------------------------------------------------------ */
+.button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-transition: all 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: all 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  font-family: 'source-sans-pro', Verdana, Geneva, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-indent: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  border-bottom: none;
+  border-radius: 4px;
+  text-shadow: none;
+  cursor: pointer;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  z-index: 1;
+}
+.button:focus {
+  outline: none;
+}
+.button:hover {
+  border-bottom: none;
+}
+.button:before,
+.button:after {
+  -webkit-transition: all 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: all 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  display: block;
+  position: absolute;
+  content: '';
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.button:before {
+  z-index: -2;
+}
+.button:after {
+  z-index: -1;
+}
+.button.small {
+  font-size: 22.5px;
+  min-width: 40px;
+  min-height: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 25px;
+}
+.button.small:hover {
+  -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+          transform: translateY(3px);
+}
+.button.small:focus {
+  -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+          transform: translateY(5px);
+}
+.button.medium {
+  font-size: 27px;
+  min-width: 60px;
+  min-height: 60px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 35px;
+}
+.button.medium:hover {
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
+}
+.button.medium:focus {
+  -webkit-transform: translateY(8px);
+      -ms-transform: translateY(8px);
+          transform: translateY(8px);
+}
+.button.large {
+  font-size: 54px;
+  min-width: 110px;
+  min-height: 110px;
+  height: 110px;
+  line-height: 110px;
+  padding: 0 50px;
+}
+.button.large:hover {
+  -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+          transform: translateY(5px);
+}
+.button.large:focus {
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+}
+.button.no-text {
+  padding-left: 0;
+  padding-right: 0;
+}
+.button.hide-text span {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+.button.mauve-fill {
+  background-color: #9b0068;
+  border: 1px solid #690046;
+  color: #FFFFFF;
+}
+.button.mauve-fill:focus {
+  background-color: #690046;
+}
+.button.grey-fill {
+  background-color: #f6f6f6;
+  border: 1px solid #e0e0e0;
+  color: #003640;
+}
+.button.grey-fill:focus {
+  background-color: #e0e0e0;
+}
+.button.small.mauve-fill {
+  box-shadow: 0 5px 0 #690046;
+}
+.button.small.mauve-fill:hover {
+  box-shadow: 0 2px 0 #690046;
+}
+.button.small.mauve-fill:focus {
+  box-shadow: 0 0 0 #690046;
+}
+.button.small.grey-fill {
+  box-shadow: 0 5px 0 #e0e0e0;
+}
+.button.small.grey-fill:hover {
+  box-shadow: 0 2px 0 #e0e0e0;
+}
+.button.small.grey-fill:focus {
+  box-shadow: 0 0 0 #e0e0e0;
+}
+.button.medium.mauve-fill {
+  box-shadow: 0 8px 0 #690046;
+}
+.button.medium.mauve-fill:hover {
+  box-shadow: 0 4px 0 #690046;
+}
+.button.medium.mauve-fill:focus {
+  box-shadow: 0 0 0 #690046;
+}
+.button.large.mauve-fill {
+  box-shadow: 0 10px 0 #690046;
+}
+.button.large.mauve-fill:hover {
+  box-shadow: 0 5px 0 #690046;
+}
+.button.large.mauve-fill:focus {
+  box-shadow: 0 0 0 #690046;
+}
+.button.arrow-right,
+.button.button.arrow-right-small,
+.button.button.arrow-right-medium,
+.button.button.arrow-right-large {
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+}
+.button.arrow-right:hover,
+.button.button.arrow-right-small:hover,
+.button.button.arrow-right-medium:hover,
+.button.button.arrow-right-large:hover {
+  background-position: 103% 0;
+}
+.button.arrow-right-small {
+  background-image: url(img/arrow-right-small.png);
+  padding-right: 40px;
+}
+.button.arrow-right-medium {
+  background-image: url(img/arrow-right-medium.png);
+  padding-right: 60px;
+}
+.button.arrow-right-large {
+  background-image: url(img/arrow-right-large.png);
+  padding-right: 110px;
+}
+/* 
+Use: Forms
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+/*************************************************************************
+ #App Questions
+**************************************************************************/
+.app-questions-container {
+  width: 560px;
+  margin: 0 auto 20px auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.app-questions-container ul.app-questions {
+  margin-bottom: 20px;
+}
+.app-questions-container ul.app-questions li {
+  margin-bottom: 10px;
+}
+.app-questions-container ul.app-questions li:last-child {
+  margin-bottom: 0;
+}
+.app-questions-container ul.app-questions li:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.app-questions-container ul.app-questions li .button {
+  display: block;
+  float: left;
+}
+.app-questions-container ul.app-questions li .left-button {
+  width: 80px;
+  margin-right: 5px;
+}
+.app-questions-container ul.app-questions li .right-button {
+  width: 475px;
+}
+.app-questions-container ul.app-questions:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+/* 
+Use: Header
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+/*************************************************************************
+ #Header
+**************************************************************************/
+#header {
+  width: 100%;
+  height: auto;
+}
+#header a {
+  text-decoration: none;
+}
+#header a:hover {
+  text-decoration: none;
+}
+/*************************************************************************
+ #Basic HTML
+**************************************************************************/
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  text-wrap: none;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+  overflow-y: hidden;
+  background-color: #000000;
+}
+img,
+svg {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  image-rendering: auto;
+}
+svg {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

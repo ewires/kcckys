@@ -1,0 +1,232 @@
+
+/* 
+Use: Typography
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+
+
+/*************************************************************************
+ #Import Fonts
+**************************************************************************/
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=3fcffd9c-105d-4872-8985-071b1748fc21");
+
+@font-face{
+	font-family: "Helvetica Neue LT W01_55 Roman";
+	src: 	url("fonts/helvetica-neue/bf7ef4ce-de2a-4213-a9d7-826a3ee323cd.eot?#iefix");
+	src: 	url("fonts/helvetica-neue/bf7ef4ce-de2a-4213-a9d7-826a3ee323cd.eot?#iefix") format("eot"),
+			url("fonts/helvetica-neue/3dac71eb-afa7-4c80-97f0-599202772905.woff2") format("woff2"),
+			url("fonts/helvetica-neue/34e0e4c0-c294-49bb-9a8e-1b2cafd54e32.woff") format("woff"),
+			url("fonts/helvetica-neue/8a8bfee3-197c-4942-9b11-71508cc9f406.ttf") format("truetype"),
+			url("fonts/helvetica-neue/5101995a-e73b-4cf9-84e8-f99eb43277b1.svg#5101995a-e73b-4cf9-84e8-f99eb43277b1") format("svg");
+}
+
+
+/*************************************************************************
+ #Font Styles
+**************************************************************************/
+
+.source-sans-pro-regular {
+	font-family: 'source-sans-pro', Verdana, Geneva, sans-serif;
+	font-weight: 400;
+}
+
+.source-sans-pro-semibold {
+	font-family: 'source-sans-pro', Verdana, Geneva, sans-serif;
+	font-weight: 600;
+}
+
+.source-sans-pro-bold {
+	font-family: 'source-sans-pro', Verdana, Geneva, sans-serif;
+	font-weight: 700;
+}
+
+.helvetica-neue-roman() {
+	font-family: 'Helvetica Neue LT W01_55 Roman', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*************************************************************************
+ #Line Heights
+**************************************************************************/
+
+.body-line-height() {
+	line-height: 1.4;
+}
+
+.header-line-height() {
+	line-height: 1.2;
+}
+
+.straight-line-height() {
+	line-height: 1;
+}
+
+
+/*************************************************************************
+ #Basic HTML
+**************************************************************************/
+
+::selection {
+	background-color: @turquoise-01;
+	text-shadow: none;
+	.white;
+}
+
+::-moz-selection {
+	background-color: @turquoise-01;
+	text-shadow: none;
+	.white;
+}
+
+body {
+	font-size: @base-size;
+	.source-sans-pro-regular;
+	.turquoise-01;
+	.body-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	.source-sans-pro-semibold;
+	.turquoise-01;
+	margin-bottom: @base-size*1.5;
+}
+
+h1 {
+	font-size: @base-size*2.5;
+	line-height: 1;
+}
+
+h2,
+h3,
+h4 {
+	margin-bottom: @base-size;
+	.header-line-height;
+}
+
+h2 {
+	font-size: @base-size*2;
+}
+
+h3 {
+	font-size: @base-size*1.5;
+}
+
+h4 {
+	font-size: @base-size*1.25;
+}
+
+h5 {
+	margin-bottom: 0;
+}
+
+p,
+ul,
+ol {
+	margin-bottom: @base-size*0.35;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+ul,
+ol {
+	margin-left: @base-size*2;
+	list-style-position: outside;
+	
+	li {
+		margin-bottom: @base-size*0.5;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
+		ul,
+		ol {
+			margin-top: @base-size*0.5;
+		}
+	}
+}
+
+.no-style-list {
+	margin-left: 0;
+	
+	li {
+		list-style-type: none;
+		margin-bottom: 0;
+		
+		ul,
+		ol {
+			margin-top: 0;
+		}
+	}
+}
+
+ul li {
+	list-style-type: square;
+}
+
+ol li {
+	list-style-type: decimal;
+}
+
+a { 
+	.transition-bezier(250ms);
+	position: relative;
+	text-decoration: none;
+	word-wrap: break-word;
+	.turquoise-01;
+}
+
+.standfirst {
+	font-size: @base-size*2;
+}
+
+strong {
+	.source-sans-pro-bold;
+}
+
+em {
+	font-style: italic;
+}
+
+.small {
+	font-size: @base-size*0.75;
+}
+
+.caps,
+.uppercase{
+	text-transform: uppercase;
+}
+
+.screen-reader,
+.screenReader {
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
+}
+
+
+/*************************************************************************
+ #Font Awesome
+**************************************************************************/
+
+.font-awesome {
+	font-family: 'FontAwesome';
+	font-size: inherit;
+  	text-rendering: auto;
+	font-smoothing: antialiased;
+	font-smoothing: grayscale;
+}

@@ -1,0 +1,233 @@
+
+/* 
+Use: UI
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+
+
+/*************************************************************************
+ #UI controls
+**************************************************************************/
+
+/* #Buttons ------------------------------------------------------------------------ */
+
+.button {
+	.input-override;
+	.transition-bezier(250ms);
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: transparent;
+	.source-sans-pro-bold;
+	text-align: center;
+	text-indent: inherit;
+	white-space: nowrap;
+	overflow: hidden;
+	outline: none;
+	border: none;
+	border-bottom: none;
+	border-radius: 4px;
+	text-shadow: none;
+	cursor: pointer;
+	transform: translate(0, 0);
+	transform: translate3d(0, 0, 0);
+	z-index: 1;
+	
+	&:focus {
+		outline: none;
+	}
+	
+	&:hover {
+		border-bottom: none;
+	}
+	
+	&:before,
+	&:after {
+		.transition-bezier(250ms);
+		display: block;
+		position: absolute;
+		content: '';
+		transform: translate(0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	
+	&:before {
+		z-index: -2;
+	}
+	
+	&:after {
+		z-index: -1;
+	}
+	
+	&.small {
+		font-size: @base-size*1.25;
+		min-width: 40px;
+		min-height: 40px;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 25px;
+		
+		&:hover {
+			transform: translateY(3px);
+		}
+		
+		&:focus {
+			transform: translateY(5px);
+		}
+	}
+	
+	&.medium {
+		font-size: @base-size*1.5;
+		min-width: 60px;
+		min-height: 60px;
+		height: 60px;
+		line-height: 60px;
+		padding: 0 35px;
+		
+		&:hover {
+			transform: translateY(4px);
+		}
+		
+		&:focus {
+			transform: translateY(8px);
+		}
+	}
+	
+	&.large {
+		font-size: @base-size*3;
+		min-width: 110px;
+		min-height: 110px;
+		height: 110px;
+		line-height: 110px;
+		padding: 0 50px;
+		
+		&:hover {
+			transform: translateY(5px);
+		}
+		
+		&:focus {
+			transform: translateY(10px);
+		}
+	}
+	
+	&.no-text {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	&.hide-text {
+		span {
+			display: block;
+			position: absolute;
+			width: 0;
+			height: 0;
+			overflow: hidden;
+			clip: rect(0 0 0 0);
+			clip: rect(0, 0, 0, 0);
+		}
+	}
+	
+	&.mauve-fill {
+		background-color: @mauve-02;
+		border: 1px solid @mauve-01;
+		.white;
+		
+		&:focus {
+			background-color: @mauve-01;
+		}
+	}
+	
+	&.grey-fill {
+		background-color: @grey-02;
+		border: 1px solid @grey-01;
+		.turquoise-01;
+		
+		&:focus {
+			background-color: @grey-01;
+		}
+	}
+	
+	&.small.mauve-fill {
+		box-shadow: 0 5px 0 @mauve-01;
+		
+		&:hover {
+			box-shadow: 0 2px 0 @mauve-01;
+		}
+		
+		&:focus {
+			box-shadow: 0 0 0 @mauve-01;
+		}
+	}
+	
+	&.small.grey-fill {
+		box-shadow: 0 5px 0 @grey-01;
+		
+		&:hover {
+			box-shadow: 0 2px 0 @grey-01;
+		}
+		
+		&:focus {
+			box-shadow: 0 0 0 @grey-01;
+		}
+	}
+	
+	&.medium.mauve-fill {
+		box-shadow: 0 8px 0 @mauve-01;
+		
+		&:hover {
+			box-shadow: 0 4px 0 @mauve-01;
+		}
+		
+		&:focus {
+			box-shadow: 0 0 0 @mauve-01;
+		}
+	}
+	
+	&.large.mauve-fill {
+		box-shadow: 0 10px 0 @mauve-01;
+		
+		&:hover {
+			box-shadow: 0 5px 0 @mauve-01;
+		}
+		
+		&:focus {
+			box-shadow: 0 0 0 @mauve-01;
+		}
+	}
+	
+	&.arrow-right {
+		background-position: 100% 0;
+		background-repeat: no-repeat;
+		
+		&:hover {
+			background-position: 103% 0;
+		}
+	}
+	
+	&.arrow-right-small,
+	&.arrow-right-medium,
+	&.arrow-right-large {
+		&:extend(.arrow-right all);
+	}
+	
+	&.arrow-right-small {
+		background-image: url(img/arrow-right-small.png);
+		padding-right: 40px;
+	}
+	
+	&.arrow-right-medium {
+		background-image: url(img/arrow-right-medium.png);
+		padding-right: 60px;
+	}
+	
+	&.arrow-right-large {
+		background-image: url(img/arrow-right-large.png);
+		padding-right: 110px;
+	}
+}

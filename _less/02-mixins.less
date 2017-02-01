@@ -1,0 +1,34 @@
+
+/* 
+Use: Mixins
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+
+*, *:before, *:after {
+	box-sizing: border-box!important;
+}
+
+.input-override() {
+	appearance: none;
+}
+
+@cubicBezier: cubic-bezier(.50, 0, .50, 1);
+
+.transition-bezier(@timing) {
+	transition: all @timing @cubicBezier;
+}
+
+.transition-bezier-delay(@timing @delay) {
+	transition: all @timing @delay @cubicBezier;
+}
+
+.transition-linear(@timing) {
+	transition: all @timing linear;
+}
+
+.transition-none() {
+	transition: none;
+}

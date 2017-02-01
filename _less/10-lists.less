@@ -1,0 +1,58 @@
+
+/* 
+Use: Forms
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+
+
+/*************************************************************************
+ #App Questions
+**************************************************************************/
+
+.app-questions-container {
+	width: 560px;
+	margin: 0 auto 20px auto;
+	padding-bottom: 30px;
+	border-bottom: 1px solid @grey-01;
+	
+	ul.app-questions {
+		margin-bottom: 20px;
+		
+		li {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:after {
+				display: block;
+				content: '';
+				clear: both;
+			}
+
+			.button {
+				display: block;
+				float: left;
+			}
+
+			.left-button {
+				width: 80px;
+				margin-right: 5px;
+			}
+
+			.right-button {
+				width: 475px;
+			}
+		}
+
+		&:after {
+			display: block;
+			content: '';
+			clear: both;
+		}
+	}
+}

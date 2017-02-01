@@ -1,0 +1,137 @@
+
+/* 
+Use: Image Treatments
+Scope: All devices
+Theme: KCC Know Your Score
+Copyright 2017, © Zest the Agency
+Author: Zest the Agency
+*/
+
+
+/*************************************************************************
+ #Global Images
+**************************************************************************/
+
+/* #Scale IMG Proportionally to Container ------------------------------------------------------------------------ */
+
+.full-width-image() {
+	width: 100%;
+	height: auto;
+}
+
+.full-height-image() {
+	height: 100%;
+	width: auto;
+}
+
+
+/*************************************************************************
+ #Responsive Image Container
+**************************************************************************/
+
+.responsive-image {
+	position: relative;
+	overflow: hidden;
+	
+	.image-container {
+		.transition-bezier(350ms);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%) scale(1);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	&.image-hover {
+		&:hover {
+			.image-container {
+				transform: translate(-50%,-50%) scale(1.1);
+			}
+		}
+	}
+}
+
+
+/* #Aspect Ratios for Responsive Images ------------------------------------------------------------------------ */
+
+/* #4:3 Ratio ------------------------------------------------------------------------ */
+
+.four-by-three {
+	padding-bottom: 75%;
+}
+
+/* #16:9 Ratio ------------------------------------------------------------------------ */
+
+.sixteen-by-nine {
+	padding-bottom: 56.25%;
+}
+
+/* #16:10 Ratio ------------------------------------------------------------------------ */
+
+.sixteen-by-ten {
+	padding-bottom: 62%;
+}
+
+/* #3:1 Ratio ------------------------------------------------------------------------ */
+
+.three-by-one {
+	padding-bottom: 33%;
+}
+
+/* #2:1 Ratio ------------------------------------------------------------------------ */
+
+.two-by-one {
+	padding-bottom: 50%;
+}
+
+/* #3:2 Ratio ------------------------------------------------------------------------ */
+
+.three-by-two {
+	padding-bottom: 66%;
+}
+
+/* #1:1 Ratio ------------------------------------------------------------------------ */
+
+.one-by-one {
+	padding-bottom: 100%;
+}
+
+/* #1:14 Ratio ------------------------------------------------------------------------ */
+
+.one-by-one-four {
+	padding-bottom: 141%;
+}
+
+/* #1:2 Ratio ------------------------------------------------------------------------ */
+
+.one-by-two {
+	padding-bottom: 200%;
+}
+
+
+/*************************************************************************
+ #Responsive Video Container
+**************************************************************************/
+
+.video-container {
+	.sixteen-by-nine;
+	position: relative;
+	margin-bottom: 20px;
+	height: 0; 
+	overflow: hidden;
+	
+	iframe, 
+	object, 
+	embed, 
+	video {
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%;
+	}
+}
